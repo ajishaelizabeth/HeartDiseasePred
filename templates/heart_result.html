@@ -2,12 +2,64 @@
 <html>
 <head>
     <title>Heart Disease Prediction Result</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: 'Poppins', sans-serif; /* Use the same font as in other files */
+            background-color: #202528; /* Light gray background */
+            color: #000000; /* Dark text color */
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        /* Styling the result container */
+        .result-container {
+            text-align: center; /* Center-align text */
+            padding: 20px;
+            background-color: white; /* White background */
+            border-radius: 5px; /* Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            width: 50%; /* Set the width of the container */
+        }
+
+        /* Styling the heading */
+        h1 {
+            font-size: 2rem; /* Large font size for the heading */
+            margin-bottom: 20px;
+        }
+        
+        /* Styling the result paragraph */
+        p {
+            font-size: 1.1rem; /* Increase font size */
+            margin-bottom: 20px;
+            font-weight: 500; /* Medium font weight */
+        }
+        
+        /* Styling the link back to home */
+        a {
+            text-decoration: none; /* Remove underline */
+            color: #1B9C85; /* Use green color for the link */
+            font-weight: 500; /* Medium font weight */
+        }
+        
+        /* Add hover effect to the link */
+        a:hover {
+            text-decoration: underline; /* Add underline on hover */
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Heart Disease Prediction Result</h1>
-    
-    <p>{{ result }}</p>
-    
-    <a href="/">Go back to home</a>
+    <div class="result-container">
+        <h1>Heart Disease Prediction Result</h1>
+        
+        <p>{{ result }}</p>
+        
+        <a href="/">Go back to home</a>
+    </div>
 </body>
 </html>
